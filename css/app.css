@@ -1,0 +1,302 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+ visibility: hidden;
+}
+ 
+.text {
+  opacity: 0;
+}
+
+.iphone-container { 
+  display: none;
+ }
+
+ .slide-1 {
+  background-color: #c0392b;
+}
+
+.slide-5 {
+  background-color: #ff6353;
+}
+
+
+/******************** Element CSS ********************/
+* {
+ font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+button {
+  font-weight: 400;
+  font-size: 20px;
+  color:#fff;
+  display: table;
+  background-color: #2cc36b;
+  border-radius: 10px;
+  height: 62px;
+  margin: 0 auto;
+  }
+
+ button:hover {
+  border: 3px solid #fff;
+  background-color: #2cc36b;
+ } 
+
+ button span {
+  text-align: center;
+  vertical-align: middle;
+ } 
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+h1, .footer-header {
+  color: #fff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+
+h2, h3 {
+  color: #333;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: -8px;
+  margin-top: 20px;
+}
+
+p {
+  color: #333;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.facebook {
+  margin-right: 10px;
+}
+
+.footer {
+  font-size: 16px;
+  color: #ffaaa1;
+}
+
+.footer-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header-text {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.main-CTA-apple {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social-media {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.truck {
+  margin-bottom: 30px;
+}
+
+.twitter {
+  margin-right: 10px;
+}
+
+@media (min-width: 550px) {
+
+/**** Full Screen Slides ****/
+
+.slide-container { 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: table;
+}
+
+.slide-container.fixed {
+  position: fixed;
+  z-index: 10;
+}
+
+.slide-contents {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**** iPhone CSS  for Skrollr ****/
+
+.iphone-container {
+  display: initial;
+  width: 259px;
+  position: absolute;
+  left: 50%;
+  margin-left: -129.5px;
+  opacity: 0; 
+  top: 35%;
+  z-index: 4;
+}
+
+.iphone {
+  width: 259px; 
+  position: absolute;
+  z-index: 1;
+  display: table;
+}
+
+.iphone-screen {
+  position: absolute;
+  height: 616px;
+  width: 234px;
+  z-index: 2;
+  top: 59px;
+  left: 13px;
+  overflow: hidden;
+}
+
+.iphone-screen-location {
+  position: absolute;
+  z-index: 2;
+}
+
+.iphone-screen-truck {
+  position: absolute;
+  z-index: 1;
+}
+
+.iphone-screen-confirm {
+  position: absolute;
+  z-index: 1;
+}
+
+.iphone-container img {
+  max-width: none;
+  vertical-align: middle;
+}
+
+.header-text-container {
+  width: 1040px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -520px;
+}
+
+/**** Element CSS ****/
+
+h2 {
+  margin-top: 60px;
+}
+
+.footer-header {
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.slide-3 h3, .slide-4 h3 {
+  margin-top: 120px;
+}
+
+.social-media {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 750px) {
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p, .header-text {
+  font-size: 22px;
+}
+
+}
+
+@media (min-width: 1000px) {
+
+button {
+  font-size: 25px;
+  height: 80px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: -8px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.header-text {
+  text-align: left;
+  font-size: 27px;
+}
+
+.main-CTA {
+  margin-top: 30px;
+}
+
+}
+
+
+
+
+
+
