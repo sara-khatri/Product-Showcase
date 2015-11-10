@@ -15,12 +15,20 @@ body {
   display: none;
  }
 
- .slide-1 {
+/**** Slides ****/
+
+.slide-container {
+  padding: 0 20px;
+}
+
+.slide-1 {
   background-color: #c0392b;
+  padding-bottom: 50px;
 }
 
 .slide-5 {
   background-color: #ff6353;
+  padding-bottom: 50px;
 }
 
 
@@ -77,7 +85,7 @@ h2, h3 {
 h3 {
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: -8px;
+  margin-bottom: 3px;
   margin-top: 20px;
 }
 
@@ -85,6 +93,7 @@ p {
   color: #333;
   font-weight: 300;
   font-size: 20px;
+  line-height: 25px;
 }
 
 .facebook {
@@ -94,6 +103,7 @@ p {
 .footer {
   font-size: 16px;
   color: #ffaaa1;
+  margin: 0;
 }
 
 .footer-header {
@@ -106,6 +116,7 @@ p {
   font-weight: 400;
   text-align: center;
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .logo {
@@ -144,17 +155,17 @@ p {
   display: table;
 }
 
-.slide-container.fixed {
-  position: fixed;
-  z-index: 10;
-}
-
 .slide-contents {
   display: table-cell;
   vertical-align: middle;
 }
 
 /**** iPhone CSS  for Skrollr ****/
+
+.slide-container.fixed {
+  position: fixed;
+  z-index: 0;
+}
 
 .iphone-container {
   display: initial;
@@ -213,6 +224,10 @@ p {
   margin-left: -520px;
 }
 
+.slide-2 p, .slide-4 p {
+  padding: 0 250px;
+}
+
 /**** Element CSS ****/
 
 h2 {
@@ -221,12 +236,12 @@ h2 {
 
 .footer-header {
   padding: 0;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 70px;
 }
 
 .slide-3 h3, .slide-4 h3 {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .social-media {
@@ -253,6 +268,14 @@ p, .header-text {
   font-size: 22px;
 }
 
+.slide-2 p, .slide-4 p {
+  padding: 0 0px;
+}
+
+.slide-container {
+  padding: 0;
+}
+
 }
 
 @media (min-width: 1000px) {
@@ -270,13 +293,13 @@ h1 {
 
 h2 {
   font-size: 40px;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
 h3 {
   font-size: 30px;
-  margin-bottom: -8px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 
@@ -287,6 +310,7 @@ p {
 .header-text {
   text-align: left;
   font-size: 27px;
+  line-height: 40px;
 }
 
 .main-CTA {
